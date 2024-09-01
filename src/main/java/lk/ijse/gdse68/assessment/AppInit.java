@@ -14,7 +14,6 @@ public class AppInit {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         applicationContext.register(Config.class);
         applicationContext.refresh();
-        Kusal kusal = applicationContext.getBean(Kusal.class);
         applicationContext.registerShutdownHook();
 
     }
